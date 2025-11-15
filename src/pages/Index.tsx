@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { ExpenseForm } from "@/components/ExpenseForm";
 import { ExpenseList } from "@/components/ExpenseList";
 import { Dashboard } from "@/components/Dashboard";
-import { AIReminder } from "@/components/AIReminder";
+import { SpeakingAgent } from "@/components/SpeakingAgent";
 import { LogOut, Wallet } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import type { Session, User } from "@supabase/supabase-js";
@@ -88,9 +88,9 @@ const Index = () => {
           </Button>
         </div>
 
-        {/* AI Reminder */}
+        {/* Speaking Agent Reminder */}
         <div className="mb-6">
-          <AIReminder refreshTrigger={refreshTrigger} />
+          <SpeakingAgent refreshTrigger={refreshTrigger} />
         </div>
 
         {/* Dashboard Stats */}
